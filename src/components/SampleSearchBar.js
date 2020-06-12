@@ -90,7 +90,7 @@ const SampleSearchBar = ({ currentSurvey }) => {
           onChange={handleChange}
         />
       </SearchDiv>
-      <ResultsDiv>
+      <ResultsDiv className="print">
         {!searchValue ? (
           <NoResultsDiv>
             Try searching by sample number (ex FD-01), sample description (ex

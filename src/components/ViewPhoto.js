@@ -21,7 +21,7 @@ const ViewPhoto = ({ result, isOpen }) => {
           {result.image_id ? (
             <Img alt={result.sample_number} src={result.image_id} />
           ) : (
-            "No photo"
+            <p className="no-print">No Photo</p>
           )}
         </Div>
       </div>

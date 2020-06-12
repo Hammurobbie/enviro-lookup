@@ -95,13 +95,18 @@ const AddComment = ({ result, isComment, toggleCom, currentSurvey }) => {
       <div>
         <Div>
           <Input
+            className="no-print"
             type="text"
             placeholder="Add comment..."
             onChange={handleChange}
           />
           <BDiv>
-            <Button2 onClick={handleSubmit}>Save</Button2>
-            <Button onClick={() => toggleCom()}>Cancel</Button>
+            <Button2 className="no-print" onClick={handleSubmit}>
+              Save
+            </Button2>
+            <Button className="no-print" onClick={() => toggleCom()}>
+              Cancel
+            </Button>
           </BDiv>
         </Div>
       </div>
