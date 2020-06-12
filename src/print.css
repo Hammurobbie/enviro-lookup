@@ -1,0 +1,10 @@
+@media print {
+  .no-print {
+    display: none;
+  }
+
+  .print {
+    display: flex;
+    flex-direction: row;
+  }
+}

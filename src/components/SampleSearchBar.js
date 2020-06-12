@@ -84,7 +84,11 @@ const SampleSearchBar = ({ currentSurvey }) => {
   return (
     <div>
       <SearchDiv>
-        <Input placeholder="Search..." onChange={handleChange} />
+        <Input
+          className="no-print"
+          placeholder="Search..."
+          onChange={handleChange}
+        />
       </SearchDiv>
       <ResultsDiv>
         {!searchValue ? (

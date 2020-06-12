@@ -98,14 +98,18 @@ const SurveyPage = (props) => {
       <NavDiv>
         <Link
           to="/"
-          className="back-link-wrapper"
+          className="back-link-wrapper no-print"
           onMouseEnter={() => setHover(!hover)}
           onMouseLeave={() => setHover(!hover)}
         >
           <Img alt="back button" src={!hover ? back_icon : back_icon_hover} />
         </Link>
-        <Button onClick={() => window.print()}>Print Page</Button>
-        <Button onClick={toggle}>Survey Drawing</Button>
+        <Button className="no-print" onClick={() => window.print()}>
+          Print Page
+        </Button>
+        <Button className="no-print" onClick={toggle}>
+          Survey Drawing
+        </Button>
       </NavDiv>
       <HeaderDiv>
         <h3>{currentSurvey[0].location} Survey</h3>

@@ -87,8 +87,12 @@ const SampleDiv = ({ result, currentSurvey }) => {
         ""
       )}
       <ButtonDiv>
-        <Button onClick={toggle}>View Photo</Button>
-        <Button onClick={toggleCom}>Add Comment</Button>
+        <Button className="no-print" onClick={toggle}>
+          View Photo
+        </Button>
+        <Button className="no-print" onClick={toggleCom}>
+          Add Comment
+        </Button>
       </ButtonDiv>
       <ViewPhoto result={result} isOpen={isOpen} />
       <AddComment

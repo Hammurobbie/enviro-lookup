@@ -20,7 +20,7 @@ const year = new Date().getFullYear();
 const Footer = () => {
   return (
     <FooterDiv>
-      <p>
+      <p className="no-print">
         <span style={{ color: "rgba(237, 217, 87, 0.5)" }}>
           Copyright © {year}
         </span>{" "}
