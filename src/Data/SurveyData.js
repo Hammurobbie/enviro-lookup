@@ -114,5 +114,3 @@ const SurveyDataArr = [
 ];
 
 export default SurveyDataArr;
-
-//Print functionality for specific elements and entire building

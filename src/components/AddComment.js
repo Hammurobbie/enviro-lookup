@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { Collapse } from "reactstrap";
 
-import SurveyDataArr from "../Data/SurveyData";
+import SurveyDataArr from "../data/SurveyData";
 
 const Div = styled.div`
   display: flex;

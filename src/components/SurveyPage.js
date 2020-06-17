@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-import SurveyDataArr from "../Data/SurveyData";
+import SurveyDataArr from "../data/SurveyData";
 import back_icon from "../img/back_icon.png";
 import back_icon_hover from "../img/back_icon_hover.png";
 
