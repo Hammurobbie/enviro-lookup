@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 
-import SurveyDataArr from "../Data/SurveyData";
+import SurveyDataArr from "../data/SurveyData";
 import ResultCard from "./ResultCard";
-import { db } from "../Data/store";
+import { db } from "../data/store";
 
 const Input = styled.input`
   color: #ef1e14;

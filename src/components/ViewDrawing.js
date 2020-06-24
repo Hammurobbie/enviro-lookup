@@ -4,25 +4,25 @@ import { Collapse } from "reactstrap";
 
 const Div = styled.div`
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding: 10px 0 20px 0;
   background-color: #4b7bd0;
 `;
 
-const Img = styled.img`
-  width: 50%;
-  box-shadow: 5px 10px 10px #4b7bd0;
+const Embed = styled.embed`
+  width: 90%;
+  padding: 10px 0;
+  height: 500px;
 `;
 
 const ViewDrawing = ({ result, isOpen }) => {
   return (
-    <Collapse isOpen={isOpen}>
+    <Collapse className="no-print" isOpen={isOpen}>
       <Div>
-        {result.drawing ? (
-          <Img alt={result.id} src={result.drawing} />
-        ) : (
-          "No drawing"
-        )}
+        {result.drawing
+          ? result.drawing.map((drawing) => <Embed src={drawing} />)
+          : "No drawing"}
       </Div>
     </Collapse>
   );

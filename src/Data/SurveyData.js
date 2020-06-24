@@ -6,7 +6,7 @@ const SurveyDataArr = [
     date: "April 1, 2020",
     sample_type: "Bulk Asbestos",
     analysis: "PLM",
-    drawing: "/img/bhm_logo.png",
+    drawing: ["/img/bhm_logo.png", "/img/bhm_logo.png"],
     samples: [
       {
         id: 1,
@@ -47,7 +47,7 @@ const SurveyDataArr = [
     date: "April 3, 2020",
     sample_type: "Bulk Asbestos",
     analysis: "PLM",
-    drawing: "/img/bhm_logo.png",
+    drawing: ["/img/N767_1.pdf", "/img/N767_2.pdf", "/img/N767_3.pdf"],
     samples: [
       {
         id: 4,
