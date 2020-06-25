@@ -12,7 +12,7 @@
 /build
 
 # misc
-.data.db3
+/src/data/data.db3
 .DS_Store
 .env.local
 .env.development.local
