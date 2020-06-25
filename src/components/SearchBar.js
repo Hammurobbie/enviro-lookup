@@ -77,7 +77,7 @@ const SearchBar = () => {
       <ResultsDiv>
         {!searchValue ? (
           <NoResultsDiv>
-            Try searching by location (ex Building 100).
+            Try searching by location (ex Building S-79).
             {/* , date (ex April 1, 2020)
             or sample type (ex Asbestos). */}
           </NoResultsDiv>
